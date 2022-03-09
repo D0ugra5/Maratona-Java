@@ -19,5 +19,6 @@ public class Aula02TiposPrimitivos {
         System.out.println("se prepara para die "+nome);
 
 
+
     }
 }
