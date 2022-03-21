@@ -39,5 +39,11 @@ public class Aula04Operadores {
 
         System.out.println("isCompravel"+isPlaystationCincoCompravel);
 
+
+        // = + -= *= /= %=
+        double bonus = 1800;
+        bonus +=  1000;
+        bonus ++;
+        System.out.println(bonus);
     }
 }
