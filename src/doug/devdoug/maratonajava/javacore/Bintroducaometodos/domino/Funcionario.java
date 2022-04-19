@@ -1,10 +1,11 @@
 package doug.devdoug.maratonajava.javacore.Bintroducaometodos.domino;
 
 public class Funcionario {
-    public String nome;
-    public int idade;
-    public double[] salarios;
-
+    private String nome;
+    private int idade;
+    private double[] salarios;
+    private double mediaSalario;
+    private double totalSalario;
 
     public void imprimirDados() {
         if (salarios == null )return;
@@ -16,13 +17,37 @@ public class Funcionario {
     }
 
     public void mediaSalario() {
-        double totalSalario = 0;
-        double mediaSalario = 0;
         for (double salario : this.salarios) {
-            totalSalario += salario;
+            this.totalSalario += salario;
         }
-        mediaSalario = totalSalario / salarios.length;
+        this.mediaSalario = totalSalario / salarios.length;
         System.out.println("a media dos salarios são " + mediaSalario);
     }
+
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public double[] getSalarios() {
+        return salarios;
+    }
+
+    public void setSalarios(double[] salarios) {
+        this.salarios = salarios;
+    }
+
 
 }
