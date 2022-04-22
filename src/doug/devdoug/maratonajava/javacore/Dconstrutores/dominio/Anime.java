@@ -1,13 +1,26 @@
-package doug.devdoug.maratonajava.javacore.Csobrecargametodos.dominio;
+package doug.devdoug.maratonajava.javacore.Dconstrutores.dominio;
 
 public class Anime {
     private String tipo;
     private int episodio;
     private String nome;
     private String genero;
+    private String estudio;
 
+    public Anime(String nome, int episodio,String tipo,String genero){
+        this();
+        this.nome = nome;
+        this.tipo = tipo;
+        this.genero = genero;
+        this.episodio = episodio;
+    }
+
+    public Anime(String nome, int episodio,String tipo,String genero, String estudio){
+        this(nome,episodio,tipo,genero);
+        this.estudio = estudio;
+    }
     public Anime (){
-
+        System.out.println("Dentro do construtor sem argumentos ");
     }
 
     public void imprime(){
@@ -15,6 +28,7 @@ public class Anime {
         System.out.println(this.episodio);
         System.out.println(this.genero);
         System.out.println(this.tipo);
+        System.out.println(this.estudio);
     }
 
     public String getGenero() {
