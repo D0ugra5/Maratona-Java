@@ -6,10 +6,20 @@ public class ProfessorEx {
 
     public void imprime(){
         System.out.println("Professor "+ this.nome);
-        if(seminarios == null)return;
-        for (Seminario seminario : seminarios) {
-            System.out.println("---nome da Palestra---");
+        if(this.seminarios == null)return;
+        System.out.println("--- Seminarios---");
+        for (Seminario seminario : this.seminarios) {
+            System.out.println("--------Titulo---------");
             System.out.println(seminario.getTitulo());
+            System.out.println("No local");
+            System.out.println(seminario.getLocal().getEndereco());
+            if(seminario.getEstudantes() == null) continue;
+            System.out.println("****Alunos ****");
+            for (Estudante estudante : seminario.getEstudantes()) {
+                System.out.println("Alunos =>"+estudante.getNome());
+                System.out.println("Idade=> "+estudante.getIdade());
+            }
+
         }
 
     }

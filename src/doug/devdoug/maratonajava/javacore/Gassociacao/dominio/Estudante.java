@@ -5,6 +5,12 @@ public class Estudante {
     private int idade;
     private Seminario seminario;
 
+    public Estudante(String nome, int idade, Seminario seminario) {
+        this.nome = nome;
+        this.idade = idade;
+        this.seminario = seminario;
+    }
+
     public Estudante(String nome) {
         this.nome = nome;
     }
