@@ -1,6 +1,6 @@
 package doug.devdoug.maratonajava.javacore.Jmodifiicadorfinal.dominio;
 
-public  class Carro {
+public   class Carro {
     private String nome;
     public static  final Comprador COMPRADOR = new Comprador();
     public static final  double VELOCIDADE_LIMITE= 250;
